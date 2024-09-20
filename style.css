@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
+}
+body {
+  background-color: hsl(47, 88%, 63%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  width: 384px;
+  height: 522px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0.5rem 0.5rem 0 0 rgb(0, 0, 0);
+  border-radius: 1.25rem;
+  border: 1px solid hsl(0, 0%, 7%);
+  padding: 1.5rem;
+  overflow: hidden;
+}
+.card .blog-image {
+  
+}
+.card .blog-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.625rem;
+}
+.card .content {
+  margin-top: 1.5rem;
+}
+.card .content h3 {
+  background-color: hsl(47, 88%, 63%);
+  display: inline-block;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+}
+.card .content h2:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card .content p:first-of-type {
+  font-size: 0.875rem;
+  margin: 0.75rem 0;
+}
+.card .content p:last-of-type {
+  font-size: 1rem;
+  color: hsl(0, 0%, 42%);
+  margin: 0.75rem 0;
+  line-height: 1.5;
+}
+.card .author {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.card .author img {
+  width: 32px;
+}
+.card .author span {
+  font-size: 0.875rem;
+  font-weight: 800;
+  margin-left: 0.75rem;
+}
+/* Mobile Screen */
+@media (max-width: 420px) {
+  .card {
+    width: 327px;
+    height: 501px;
+  }
+  .card .blog-image img {
+    width: 100%;
+  }
+}

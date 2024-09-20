@@ -36,7 +36,10 @@ main .content h3 {
   padding: 0.25rem 0.75rem;
   font-size: 0.875rem;
 }
-main .content h2:hover {
+main .content h1 {
+  font-size: 1.5rem;
+}
+main .content h1:hover {
   color: hsl(47, 88%, 63%);
   cursor: pointer;
   transition: 0.3s;
@@ -66,15 +69,15 @@ main .author span {
 }
 /* Mobile Screen */
 @media (max-width: 420px) {
-  .card {
+  main {
     width: 327px;
     height: 470px;
   }
-  .card .content p:last-of-type {
+  main.content p:last-of-type {
     font-size: 0.;
     font-size: 0.875rem;
   }
-  .card .content h2 {
+  main .content h1 {
     font-size: 1.25rem;
   }
 }
